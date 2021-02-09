@@ -1,0 +1,138 @@
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+Dark cyan: hsl(185, 75%, 39%)
+Very dark desaturated blue: hsl(229, 23%, 23%)
+Dark grayish blue: hsl(227, 10%, 46%)
+
+### Neutral
+
+Dark gray: hsl(0, 0%, 59%)
+
+## Typography
+
+### Body Copy
+
+- Font size (name and stats): 18px
+
+### Font
+
+- Family: [Kumbh Sans](https://fonts.google.com/specimen/Kumbh+Sans)
+- Weights: 400, 700
+ */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 18px;
+    font-family: 'Kumbh Sans', sans-serif;
+    overflow: hidden;
+    background-color: hsl(185, 75%, 39%);
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    position: absolute;
+    width: 330px;
+    height: 350px;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: white;
+}
+
+.card-bg{
+    background-image: url(/images/bg-pattern-card.svg);
+    height: 140px;
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -53px;
+}
+
+.card-body h2{
+    font-size: 18px;
+    font-weight: 700;
+    color: hsl(229, 23%, 23%);
+    margin: 20px 0 8px 0;
+
+}
+
+.card-body span{
+    font-weight: 400;
+    color:  hsl(227, 10%, 46%);
+    margin-left: 4px;
+}
+
+.card-body h3{
+    font-size: 12px;
+    font-weight: 400;
+    color: hsl(227, 10%, 46%);
+    margin: 0 0 20px 0;
+}
+
+.profile-pic{
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+.card-footer{
+    border-top: 1px solid rgba(150, 150, 150, 0.2);
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card-footer .value{
+    font-size: 18px;
+    font-weight: 700;
+    color: hsl(229, 23%, 23%);
+    margin-top: 18px;
+    margin-bottom: 3px;
+}
+
+.card-footer .description{
+    font-weight: 400;
+    font-size: 10px;
+    color: hsl(227, 10%, 46%);
+    letter-spacing: 1px;
+    margin-top: 0;
+}
+
+.footer-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.circle-top{
+    margin-top: -750px;
+}
+
+.circle-bottom{
+    margin-bottom: -1000px;
+    margin-right: 50px;
+}
